@@ -1,11 +1,32 @@
+*{
+
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+  
+}
 #header{
 
     background-color:skyblue;
     width:auto;
-    height:200px;
+    height:100px;
+
+}
+#buttonsContainer{
+
+    position:relative;
+    top:25px;
+    right:25px;
+    width:auto;
+    height:50px;
+    float:right;
+
 
 }
 .buttonz {
+
+
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -14,4 +35,5 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    
   }
