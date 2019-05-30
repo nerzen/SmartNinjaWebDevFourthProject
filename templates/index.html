@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock title %}
+{% block content %}
+<p>Hello index.html here</p>
+<p> {{ random_text }} </p>
+<p> {{ current_year }} </p>
+<ul>
+    {% for city in cities %}
+        <p>{{city}}</p>
+    {% endfor %}
+</ul>
+{% if logged_in %}
+<p> Uporabnik je prijavljen </p>
+{% else %}
+<p> Uporabnik ni prijavljen </p>
+{% endif %}
+{% endblock content %}

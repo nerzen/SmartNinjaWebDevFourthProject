@@ -8,9 +8,15 @@
         <link rel="stylesheet" href="/static/css/style.css">
 
         <!-- Just a title ;) -->
-        <title>SmartNinja with Jinja</title>
+        <title>{% block title %}{% endblock title %}</title>
     </head>
     <body>
         <h1>Let's try out Jinja!</h1>
+        <p>
+            <a href = "/"> Home </a>
+            <a href = "/about"> About me </a>
+        </p>
+        {% block content %}
+        {% endblock content %}
     </body>
 </html>
